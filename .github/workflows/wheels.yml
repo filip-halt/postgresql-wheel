@@ -27,4 +27,4 @@ jobs:
           CIBW_BEFORE_ALL_LINUX: ${{ format('bash src/tools/install_pg_rpm.sh {0}', github.ref) }}
       - uses: actions/upload-artifact@v2
         with:
-          path: ./wheelhouse/*.whl
+          path: .
