@@ -13,7 +13,7 @@ curl -L -O https://ftp.postgresql.org/pub/source/v${VERSION}/postgresql-${VERSIO
 
 tar -xzf postgresql-${VERSION}.tar.gz
 cd postgresql-${VERSION}
-./configure --prefix=`pwd`/../src/postgresql --with-ossp-uuid --with-libxml --with-libxslt --without-icu
+./configure --prefix=`pwd`/../src/postgresql --with-ossp-uuid --with-libxml --with-libxslt
 make -j 4 world-bin
 make install-world-bin
 cd ..
